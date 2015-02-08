@@ -1,0 +1,55 @@
+/*
+ * Payment hold information of the payment type
+ */
+package mastopay;
+
+/**
+ *
+ * @author tenzinwangchuk
+ */
+public class Payment {
+
+    private int amountTotal;
+
+    /**
+     *
+     */
+    public enum type {
+
+        /**
+         *
+         */
+        Cash, 
+
+        /**
+         *
+         */
+        Credit, 
+
+        /**
+         *
+         */
+        Debit };
+    
+    /**
+     *
+     */
+    public Payment() { }
+
+    /**
+     *
+     * @param total
+     */
+    public void setAmountTotal(int total) {
+        this.amountTotal = total;
+    }
+
+    /**
+     *
+     * @return amountTotal
+     */
+    public int getAmountTotal() {
+        return amountTotal;
+    }
+
+}
